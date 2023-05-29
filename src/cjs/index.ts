@@ -9,6 +9,6 @@ exports.default = class CJSGmailService {
 
     async before (...args: never[]) {
         const instance = await this.instance
-        return instance.onPrepare(...args)
+        return instance.before(...args)
     }
 }
